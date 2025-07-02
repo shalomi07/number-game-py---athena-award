@@ -1,16 +1,16 @@
-print("Cara bermain:")
-print("Game ini akan menebak angka yang anda pikirkan")
-print("Komputer akan memberikan deret angka dengan range 1 sampai angka maksimum yang anda tentukan")
+print("How to play the number game:")
+print("Think about any number. This game will guess your number CORRECTLY (trust me!)")
+print("The computer will give you a sequence of numbers, and you have to answer whether your number is in that sequence or not.")
 print(" ")
 
 hasil = 0
 
-Z = int(input("Masukkan angka akhir: "))
+Z = int(input("Input maximum number in the sequence: "))
 z = " "
 for x in range (1, Z+1, 2):
     z += str(x)+' '
 print(z)
-jawab1 = input("Apakah ada angka anda di barisan tersebut? (Y/N) ")
+jawab1 = input("Is your number in this sequence? (Y/N) ")
 
 if jawab1 == 'y' or jawab1 == "Y":
     hasil += 1
@@ -34,7 +34,7 @@ x = 0, jadi masuk kategori genap, y = 2 + 1 = 3
 x = 1, jadi masuk kategori ganjil, y = 3 + 3 = 6 dst
 barisan = 2, 3, 6, 7, 10, 11, 14, 15, 18, 19, 22, 23, 26, 27, 30, 31
 """
-jawab2 = input("Apakah ada angka anda di barisan tersebut? (Y/N) ")
+jawab2 = input("Is your number in this sequence? (Y/N) ")
 if jawab2 == 'y' or jawab2 == "Y":
     hasil += 2
 #2
@@ -55,7 +55,7 @@ for x in range (0, Z+1):
         break
     z += str(y) + ' '
 print(z)
-jawab3 = input("Apakah ada angka anda di barisan tersebut? (Y/N) ")
+jawab3 = input("Is your number in this sequence? (Y/N) ")
 if jawab3 == 'y' or jawab3 == "Y":
     hasil += 4
 #4
@@ -72,7 +72,7 @@ for x in range (0, Z+1):
         break
     z += str(y) + ' '
 print(z)
-jawab4 = input("Apakah ada angka anda di barisan tersebut? (Y/N) ")
+jawab4 = input("Is your number in this sequence? (Y/N) ")
 if jawab4 == 'y' or jawab4 == "Y":
     hasil += 8
 #8
@@ -88,7 +88,7 @@ for x in range (0, Z+1):
         break
     z += str(y) + ' '
 print(z)
-jawab5 = input("Apakah ada angka anda di barisan tersebut? (Y/N) ")
+jawab5 = input("Is your number in this sequence? (Y/N) ")
 if jawab5 == 'y' or jawab5 == "Y":
     hasil += 16
 
@@ -103,7 +103,7 @@ for x in range (0, Z+1):
         break
     z += str(y) + ' '
 print(z)
-jawab6 = input("Apakah ada angka anda di barisan tersebut? (Y/N) ")
+jawab6 = input("Is your number in this sequence? (Y/N) ")
 if jawab6 == 'y' or jawab6 == "Y":
     hasil += 32
 
@@ -118,7 +118,7 @@ for x in range (0, Z+1):
         break
     z += str(y) + ' '
 print(z)
-jawab7 = input("Apakah ada angka anda di barisan tersebut? (Y/N) ")
+jawab7 = input("Is your number in this sequence? (Y/N) ")
 if jawab7 == 'y' or jawab7 == "Y":
     hasil += 64
 
@@ -133,7 +133,7 @@ for x in range (0, Z+1):
         break
     z += str(y) + ' '
 print(z)
-jawab8 = input("Apakah ada angka anda di barisan tersebut? (Y/N) ")
+jawab8 = input("Is your number in this sequence? (Y/N) ")
 if jawab8 == 'y' or jawab8 == "Y":
     hasil += 128
 
@@ -148,7 +148,7 @@ for x in range (0, Z+1):
         break
     z += str(y) + ' '
 print(z)
-jawab9 = input("Apakah ada angka anda di barisan tersebut? (Y/N) ")
+jawab9 = input("Is your number in this sequence? (Y/N) ")
 if jawab9 == 'y' or jawab9 == "Y":
     hasil += 256
 
@@ -163,9 +163,11 @@ for x in range (0, Z+1):
         break
     z += str(y) + ' '
 print(z)
-jawab10 = input("Apakah ada angka anda di barisan tersebut? (Y/N) ")
+jawab10 = input("Is your number in this sequence? (Y/N) ")
 if jawab10 == 'y' or jawab10 == "Y":
     hasil += 512
 
 
-print("Angka anda adalah", hasil)
+print("Your number is", hasil)
+print("Told ya I can guess your number correctly!")
+# please ignore the language used in naming variables and comments, I used Indonesian language to make it easier for me :)

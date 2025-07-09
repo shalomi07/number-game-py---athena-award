@@ -33,22 +33,24 @@ if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
 # starts with 2
 s = " "
 x = -1
-for d in range(x, max+1):
-    if S % 2 == 0:
-        S += 1
-    else :
-        S += 3
-    if S > max:
-        break
-    print(s + str(S))
-    ans1 = input("Is your number in the sequence? (Y/N): ")
-    if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
-        num += 1
+if max >= x:
+    for d in range(x, max+1):
+        if x % 2 == 0:
+            x = x + 1
+        else :
+            x = x + 3
+        if x > max:
+            break
+        s = " " + str(x)
+        print(s)
+        ans1 = input("Is your number in the sequence? (Y/N): ")
+        if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
+            num += 1
 
 # starts with 4
 s = " "
 x = -1
-if max >= S:
+if max >= x:
     for d in range (0, max+1):
         if d % 4 == 0:
             x += 5
@@ -56,7 +58,8 @@ if max >= S:
             x += 1
         if x > max:
             break
-        print(s + str(S))
+        s += str(x)
+        print(s)
         ans1 = input("Is your number in the sequence? (Y/N): ")
         if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
             num += 1
@@ -64,13 +67,13 @@ if max >= S:
 # starts with 8
 s = " "
 x = -1
-if max >= S:
+if max >= x:
     for d in range (0, max+1):
         if d % 8 == 0:
             x += 9
         else:
             x += 1
-        print(s + str(S))
+        print(s + str(x))
         ans1 = input("Is your number in the sequence? (Y/N): ")
         if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
             num += 1
@@ -78,7 +81,7 @@ if max >= S:
 # starts with 16
 s = " "
 x = -1
-if max >= S:
+if max >= x:
     for d in range (0, max+1):
         if d % 16 == 0:
             x += 17
@@ -92,139 +95,139 @@ if max >= S:
 # starts with 32
 s = " "
 x = -1
-if max >= S:
+if max >= x:
     for d in range (0, max+1):
         if d % 32 == 0:
-            S += 33
+            x += 33
         else:
-            S += 1
-        print(s + str(S))
+            x += 1
+        print(s + str(x))
         ans1 = input("Is your number in the sequence? (Y/N): ")
         if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
             num += 1
 
 # starts with 64
 s = " "
-S = -1
-if max >= S:
+x = -1
+if max >= x:
     for d in range (0, max+1):
         if d % 64 == 0:
             S += 67
         else:
             S += 1
-        print(s + str(S))
+        print(s + str(x))
         ans1 = input("Is your number in the sequence? (Y/N): ")
         if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
             num += 1
 
 # starts with 128
 s = " "
-S = -1
-if max >= S:
+x = -1
+if max >= x:
     for d in range (0, max+1):
         if d % 128 == 0:
-            S += 129
+            x += 129
         else:
-            S += 1
-        print(s + str(S))
+            x += 1
+        print(s + str(x))
         ans1 = input("Is your number in the sequence? (Y/N): ")
         if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
             num += 1
 
 # starts with 256
 s = " "
-S = -1
-if max >= S:
+x = -1
+if max >= x:
     for d in range (0, max+1):
         if d % 256 == 0:
-            S += 257
+            x += 257
         else:
-            S += 1
-        print(s + str(S))
+            x += 1
+        print(s + str(x))
         ans1 = input("Is your number in the sequence? (Y/N): ")
         if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
             num += 1
 
 # starts with 512
 s = " "
-S = -1
-if max >= S:
+x = -1
+if max >= x:
     for d in range (0, max+1):
         if d % 512 == 0:
-            S += 513
+            x += 513
         else:
-            S += 1
-        print(s + str(S))
+            x += 1
+        print(s + str(x))
         ans1 = input("Is your number in the sequence? (Y/N): ")
         if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
             num += 1
 
 # starts with 1024
 s = " "
-S = -1
-if max >= S:
+x = -1
+if max >= x:
     for d in range (0, max+1):
         if d % 1024 == 0:
-            S += 1025
+            x += 1025
         else:
-            S += 1
-        print(s + str(S))
+            x += 1
+        print(s + str(x))
         ans1 = input("Is your number in the sequence? (Y/N): ")
         if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
             num += 1
 
 # starts with 2048
 s = " "
-S = -1
-if max >= S:
+x = -1
+if max >= x:
     for d in range (0, max+1):
         if d % 2048 == 0:
-            S += 2049
+            x += 2049
         else:
-            S += 1
-        print(s + str(S))
+            x += 1
+        print(s + str(x))
         ans1 = input("Is your number in the sequence? (Y/N): ")
         if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
             num += 1
 
 # starts with 4096
 s = " "
-S = -1
+x = -1
 if max >= S:
     for d in range (0, max+1):
         if d % 4096 == 0:
-            S += 4097
+            x += 4097
         else:
-            S += 1
-        print(s + str(S))
+            x += 1
+        print(s + str(x))
         ans1 = input("Is your number in the sequence? (Y/N): ")
         if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
             num += 1
 
 # starts with 8192
 s = " "
-S = -1
-if max >= S:
+x = -1
+if max >= x:
     for d in range (0, max+1):
         if d % 8192 == 0:
-            S += 8193
+            x += 8193
         else:
-            S += 1
-        print(s + str(S))
+            x += 1
+        print(s + str(x))
         ans1 = input("Is your number in the sequence? (Y/N): ")
         if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
             num += 1
 
 # starts with 16384
 s = " "
-S = -1
+x = -1
 if max >= S:
     for d in range (0, max+1):
         if d % 16384 == 0:
-            S += 16387
+            x += 16387
         else:
-            S += 1
-        print(s + str(S))
+            x += 1
+        print(s + str(x))
         ans1 = input("Is your number in the sequence? (Y/N): ")
         if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
             num += 1

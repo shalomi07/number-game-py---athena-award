@@ -32,27 +32,30 @@ if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
 
 # starts with 2
 s = " "
-S = -1
-if max >= S:
-    for d in range(S, max+1):
-        if S % 2 == 0:
-            S += 1
-        else :
-            S += 3
-        print(s + str(S))
-        ans1 = input("Is your number in the sequence? (Y/N): ")
-        if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
-            num += 1
+x = -1
+for d in range(x, max+1):
+    if S % 2 == 0:
+        S += 1
+    else :
+        S += 3
+    if S > max:
+        break
+    print(s + str(S))
+    ans1 = input("Is your number in the sequence? (Y/N): ")
+    if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
+        num += 1
 
 # starts with 4
 s = " "
-S = -1
+x = -1
 if max >= S:
-    for d in range (S, max+1):
+    for d in range (0, max+1):
         if d % 4 == 0:
-            S += 5
+            x += 5
         else:
-            S += 1
+            x += 1
+        if x > max:
+            break
         print(s + str(S))
         ans1 = input("Is your number in the sequence? (Y/N): ")
         if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
@@ -60,13 +63,13 @@ if max >= S:
 
 # starts with 8
 s = " "
-S = -1
+x = -1
 if max >= S:
-    for d in range (S, max+1):
+    for d in range (0, max+1):
         if d % 8 == 0:
-            S += 9
+            x += 9
         else:
-            S += 1
+            x += 1
         print(s + str(S))
         ans1 = input("Is your number in the sequence? (Y/N): ")
         if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
@@ -74,23 +77,23 @@ if max >= S:
 
 # starts with 16
 s = " "
-S = -1
+x = -1
 if max >= S:
-    for d in range (S, max+1):
+    for d in range (0, max+1):
         if d % 16 == 0:
-            S += 17
+            x += 17
         else:
-            S += 1
-        print(s + str(S))
+            x += 1
+        print(s + str(x))
         ans1 = input("Is your number in the sequence? (Y/N): ")
         if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
             num += 1
 
 # starts with 32
 s = " "
-S = -1
+x = -1
 if max >= S:
-    for d in range (S, max+1):
+    for d in range (0, max+1):
         if d % 32 == 0:
             S += 33
         else:
@@ -104,7 +107,7 @@ if max >= S:
 s = " "
 S = -1
 if max >= S:
-    for d in range (S, max+1):
+    for d in range (0, max+1):
         if d % 64 == 0:
             S += 67
         else:
@@ -118,7 +121,7 @@ if max >= S:
 s = " "
 S = -1
 if max >= S:
-    for d in range (S, max+1):
+    for d in range (0, max+1):
         if d % 128 == 0:
             S += 129
         else:
@@ -132,7 +135,7 @@ if max >= S:
 s = " "
 S = -1
 if max >= S:
-    for d in range (S, max+1):
+    for d in range (0, max+1):
         if d % 256 == 0:
             S += 257
         else:
@@ -146,7 +149,7 @@ if max >= S:
 s = " "
 S = -1
 if max >= S:
-    for d in range (S, max+1):
+    for d in range (0, max+1):
         if d % 512 == 0:
             S += 513
         else:
@@ -160,7 +163,7 @@ if max >= S:
 s = " "
 S = -1
 if max >= S:
-    for d in range (S, max+1):
+    for d in range (0, max+1):
         if d % 1024 == 0:
             S += 1025
         else:
@@ -174,7 +177,7 @@ if max >= S:
 s = " "
 S = -1
 if max >= S:
-    for d in range (S, max+1):
+    for d in range (0, max+1):
         if d % 2048 == 0:
             S += 2049
         else:
@@ -188,7 +191,7 @@ if max >= S:
 s = " "
 S = -1
 if max >= S:
-    for d in range (S, max+1):
+    for d in range (0, max+1):
         if d % 4096 == 0:
             S += 4097
         else:
@@ -202,7 +205,7 @@ if max >= S:
 s = " "
 S = -1
 if max >= S:
-    for d in range (S, max+1):
+    for d in range (0, max+1):
         if d % 8192 == 0:
             S += 8193
         else:
@@ -216,7 +219,7 @@ if max >= S:
 s = " "
 S = -1
 if max >= S:
-    for d in range (S, max+1):
+    for d in range (0, max+1):
         if d % 16384 == 0:
             S += 16387
         else:

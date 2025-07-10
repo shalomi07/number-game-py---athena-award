@@ -12,7 +12,7 @@
 print("Welcome to the world's famous number game!")
 print("I am ShalleyCodes, and I will read your mind for today!")
 print("Think of any number between 1 and the maximum number you input.")
-max = int(input("Please input the maximum number you for the sequence (more than 200, please!): "))
+max = int(input("Please input the maximum number you for the sequence, (more than 200, please!): "))
 if max > 16384:
     print("The maximum number is too high, please rerun the program and input a number less than 16384.")
     exit()
@@ -33,19 +33,18 @@ if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
 # starts with 2
 s = " "
 x = -1
-if max >= x:
-    for d in range(x, max+1):
-        if x % 2 == 0:
-            x = x + 1
-        else :
-            x = x + 3
-        if x > max:
-            break
-        s = " " + str(x)
-        print(s)
-        ans1 = input("Is your number in the sequence? (Y/N): ")
-        if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
-            num += 1
+for d in range(x, max+1):
+    if x % 2 == 0:
+        x = x + 1
+    else :
+        x = x + 3
+    if x > max:
+        break
+    s += str(x) + ' '
+print(s)
+ans1 = input("Is your number in the sequence? (Y/N): ")
+if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
+    num += 2
 
 # starts with 4
 s = " "
@@ -58,11 +57,11 @@ if max >= x:
             x += 1
         if x > max:
             break
-        s += str(x)
-        print(s)
-        ans1 = input("Is your number in the sequence? (Y/N): ")
-        if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
-            num += 1
+        s += str(x) + ' '
+    print(s)
+    ans1 = input("Is your number in the sequence? (Y/N): ")
+    if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
+        num += 4
 
 # starts with 8
 s = " "
@@ -73,10 +72,13 @@ if max >= x:
             x += 9
         else:
             x += 1
-        print(s + str(x))
-        ans1 = input("Is your number in the sequence? (Y/N): ")
-        if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
-            num += 1
+        if x > max:
+            break
+        s += str(x) + ' '
+    print(s)
+    ans1 = input("Is your number in the sequence? (Y/N): ")
+    if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
+        num += 8
 
 # starts with 16
 s = " "
@@ -87,10 +89,13 @@ if max >= x:
             x += 17
         else:
             x += 1
-        print(s + str(x))
-        ans1 = input("Is your number in the sequence? (Y/N): ")
-        if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
-            num += 1
+        if x > max:
+            break
+        s += str(x) + ' '
+    print(s)
+    ans1 = input("Is your number in the sequence? (Y/N): ")
+    if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
+        num += 16
 
 # starts with 32
 s = " "
@@ -101,10 +106,13 @@ if max >= x:
             x += 33
         else:
             x += 1
-        print(s + str(x))
-        ans1 = input("Is your number in the sequence? (Y/N): ")
-        if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
-            num += 1
+        if x > max:
+            break
+        s += str(x) + ' '
+    print(s)
+    ans1 = input("Is your number in the sequence? (Y/N): ")
+    if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
+        num += 32
 
 # starts with 64
 s = " "
@@ -112,13 +120,16 @@ x = -1
 if max >= x:
     for d in range (0, max+1):
         if d % 64 == 0:
-            S += 67
+            x += 65
         else:
-            S += 1
-        print(s + str(x))
-        ans1 = input("Is your number in the sequence? (Y/N): ")
-        if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
-            num += 1
+            x += 1
+        if x > max:
+            break
+        s += str(x) + ' '
+    print(s)
+    ans1 = input("Is your number in the sequence? (Y/N): ")
+    if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
+        num += 64
 
 # starts with 128
 s = " "
@@ -129,10 +140,13 @@ if max >= x:
             x += 129
         else:
             x += 1
-        print(s + str(x))
-        ans1 = input("Is your number in the sequence? (Y/N): ")
-        if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
-            num += 1
+        if x > max:
+            break
+        s += str(x) + ' '
+    print(s)
+    ans1 = input("Is your number in the sequence? (Y/N): ")
+    if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
+        num += 128
 
 # starts with 256
 s = " "
@@ -143,10 +157,13 @@ if max >= x:
             x += 257
         else:
             x += 1
-        print(s + str(x))
-        ans1 = input("Is your number in the sequence? (Y/N): ")
-        if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
-            num += 1
+        if x > max:
+            break
+        s += str(x) + ' '
+    print(s)
+    ans1 = input("Is your number in the sequence? (Y/N): ")
+    if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
+        num += 256
 
 # starts with 512
 s = " "
@@ -157,10 +174,13 @@ if max >= x:
             x += 513
         else:
             x += 1
-        print(s + str(x))
-        ans1 = input("Is your number in the sequence? (Y/N): ")
-        if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
-            num += 1
+        if x > max:
+            break
+        s += str(x) + ' '
+    print(s)
+    ans1 = input("Is your number in the sequence? (Y/N): ")
+    if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
+        num += 512
 
 # starts with 1024
 s = " "
@@ -171,10 +191,13 @@ if max >= x:
             x += 1025
         else:
             x += 1
-        print(s + str(x))
-        ans1 = input("Is your number in the sequence? (Y/N): ")
-        if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
-            num += 1
+        if x > max:
+            break
+        s += str(x) + ' '
+    print(s)
+    ans1 = input("Is your number in the sequence? (Y/N): ")
+    if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
+        num += 1024
 
 # starts with 2048
 s = " "
@@ -185,24 +208,30 @@ if max >= x:
             x += 2049
         else:
             x += 1
-        print(s + str(x))
-        ans1 = input("Is your number in the sequence? (Y/N): ")
-        if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
-            num += 1
+        if x > max:
+            break
+        s += str(x) + ' '
+    print(s)
+    ans1 = input("Is your number in the sequence? (Y/N): ")
+    if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
+        num += 2048
 
 # starts with 4096
 s = " "
 x = -1
-if max >= S:
+if max >= x:
     for d in range (0, max+1):
         if d % 4096 == 0:
             x += 4097
         else:
             x += 1
-        print(s + str(x))
-        ans1 = input("Is your number in the sequence? (Y/N): ")
-        if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
-            num += 1
+        if x > max:
+            break
+        s += str(x) + ' '
+    print(s)
+    ans1 = input("Is your number in the sequence? (Y/N): ")
+    if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
+        num += 4096
 
 # starts with 8192
 s = " "
@@ -213,24 +242,30 @@ if max >= x:
             x += 8193
         else:
             x += 1
-        print(s + str(x))
-        ans1 = input("Is your number in the sequence? (Y/N): ")
-        if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
-            num += 1
+        if x > max:
+            break
+        s += str(x) + ' '
+    print(s)
+    ans1 = input("Is your number in the sequence? (Y/N): ")
+    if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
+        num += 8192
 
 # starts with 16384
 s = " "
 x = -1
-if max >= S:
+if max >= x:
     for d in range (0, max+1):
         if d % 16384 == 0:
             x += 16387
         else:
             x += 1
-        print(s + str(x))
-        ans1 = input("Is your number in the sequence? (Y/N): ")
-        if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
-            num += 1
+        if x > max:
+            break
+        s += str(x) + ' '
+    print(s)
+    ans1 = input("Is your number in the sequence? (Y/N): ")
+    if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
+        num += 16384
 
 print("Your number is ", num)
 print("All credits to ShalleyCodes 2025 - for Athena Award")

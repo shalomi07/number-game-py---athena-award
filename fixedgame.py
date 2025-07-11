@@ -12,7 +12,7 @@
 print("Welcome to the world's famous number game!")
 print("I am ShalleyCodes, and I will read your mind for today!")
 print("Think of any number between 1 and the maximum number you input.")
-max = int(input("Please input the maximum number you for the sequence, (more than 200, please!): "))
+max = int(input("Please input the maximum number you for the sequence: "))
 if max > 16384:
     print("The maximum number is too high, please rerun the program and input a number less than 16384.")
     exit()
@@ -62,6 +62,8 @@ if max >= x:
     ans1 = input("Is your number in the sequence? (Y/N): ")
     if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
         num += 4
+else:
+    pass
 
 # starts with 8
 s = " "
@@ -79,6 +81,8 @@ if max >= x:
     ans1 = input("Is your number in the sequence? (Y/N): ")
     if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
         num += 8
+else:
+    pass
 
 # starts with 16
 s = " "
@@ -96,6 +100,8 @@ if max >= x:
     ans1 = input("Is your number in the sequence? (Y/N): ")
     if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
         num += 16
+else:
+    pass
 
 # starts with 32
 s = " "
@@ -113,6 +119,8 @@ if max >= x:
     ans1 = input("Is your number in the sequence? (Y/N): ")
     if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
         num += 32
+else:
+    pass
 
 # starts with 64
 s = " "
@@ -130,6 +138,8 @@ if max >= x:
     ans1 = input("Is your number in the sequence? (Y/N): ")
     if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
         num += 64
+else:
+    pass
 
 # starts with 128
 s = " "
@@ -147,6 +157,8 @@ if max >= x:
     ans1 = input("Is your number in the sequence? (Y/N): ")
     if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
         num += 128
+else:
+    pass
 
 # starts with 256
 s = " "
@@ -164,6 +176,8 @@ if max >= x:
     ans1 = input("Is your number in the sequence? (Y/N): ")
     if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
         num += 256
+else:
+    pass
 
 # starts with 512
 s = " "
@@ -181,6 +195,8 @@ if max >= x:
     ans1 = input("Is your number in the sequence? (Y/N): ")
     if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
         num += 512
+else:
+    pass
 
 # starts with 1024
 s = " "
@@ -198,6 +214,8 @@ if max >= x:
     ans1 = input("Is your number in the sequence? (Y/N): ")
     if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
         num += 1024
+else:
+    pass
 
 # starts with 2048
 s = " "
@@ -215,6 +233,8 @@ if max >= x:
     ans1 = input("Is your number in the sequence? (Y/N): ")
     if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
         num += 2048
+else:
+    pass
 
 # starts with 4096
 s = " "
@@ -232,6 +252,8 @@ if max >= x:
     ans1 = input("Is your number in the sequence? (Y/N): ")
     if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
         num += 4096
+else:
+    pass
 
 # starts with 8192
 s = " "
@@ -249,6 +271,8 @@ if max >= x:
     ans1 = input("Is your number in the sequence? (Y/N): ")
     if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
         num += 8192
+else:
+    pass
 
 # starts with 16384
 s = " "
@@ -266,6 +290,8 @@ if max >= x:
     ans1 = input("Is your number in the sequence? (Y/N): ")
     if ans1 == 'y' or ans1 == 'Yes' or ans1 == 'YES' or ans1 == 'Y':
         num += 16384
+else:
+    pass
 
 print("Your number is ", num)
 print("All credits to ShalleyCodes 2025 - for Athena Award")
